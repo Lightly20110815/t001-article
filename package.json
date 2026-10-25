@@ -1,0 +1,20 @@
+{
+  "name": "t001-single-article",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "prepare:images": "node scripts/prepare-images.mjs"
+  },
+  "dependencies": {
+    "dompurify": "^3.4.17",
+    "marked": "^18.1.1"
+  },
+  "devDependencies": {
+    "sharp": "^0.35.5",
+    "vite": "^8.3.5"
+  }
+}

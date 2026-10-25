@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#151513" />
+    <meta name="description" content="杂谈 #T001。只是记录一些我的所见所想，不可以代表任何事物。" />
+    <link rel="icon" type="image/svg+xml" href="%BASE_URL%favicon.svg" />
+    <title>杂谈 #T001</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#article">跳到正文</a>
+    <div class="reading-progress" aria-hidden="true"><span id="reading-progress"></span></div>
+
+    <header class="masthead" id="top">
+      <a class="publication" href="#top" aria-label="杂谈，回到页首">
+        <span>一些所见所想</span>
+      </a>
+      <span class="masthead-issue">杂谈 <span>/</span> T001</span>
+    </header>
+
+    <main class="page-layout">
+      <aside class="article-sidebar" aria-label="文章导航">
+        <div class="sidebar-inner">
+          <p class="sidebar-label">这一篇</p>
+          <nav class="article-nav">
+            <a href="#introduction" aria-current="location"><span class="nav-mark"></span>引言</a>
+            <a href="#story"><span class="nav-mark"></span>正文</a>
+            <a href="#thinking"><span class="nav-mark"></span>Thinking</a>
+          </nav>
+          <div class="sidebar-progress"><span id="progress-label">0</span><span>% 已读</span></div>
+        </div>
+      </aside>
+
+      <div class="reading-column">
+        <header class="article-header">
+          <h1 aria-label="杂谈 #T001"><span class="title-character" aria-hidden="true">杂</span><span class="title-character" aria-hidden="true">谈</span><span class="issue-number" aria-hidden="true">#T001</span></h1>
+        </header>
+
+        <article id="article" class="prose" aria-label="杂谈 #T001 正文"></article>
+
+        <footer class="article-footer">
+          <span class="footer-issue">杂谈 / T001</span>
+          <a href="#top">回到开头 <span aria-hidden="true">↗</span></a>
+        </footer>
+      </div>
+      <div class="page-margin" aria-hidden="true"><span>T001</span></div>
+    </main>
+
+    <section class="music-player" id="music-player" aria-label="背景音乐">
+      <button class="music-toggle" id="music-toggle" type="button" aria-label="播放背景音乐" aria-pressed="false">
+        <svg class="play-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 11 7-11 7Z" /></svg>
+        <svg class="pause-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5h3v14H8zm6 0h3v14h-3z" /></svg>
+      </button>
+      <div class="music-info">
+        <div class="music-title">坏结局 <span class="equalizer" aria-hidden="true"><i></i><i></i><i></i><i></i></span></div>
+        <span id="music-status" class="sr-only" role="status"></span>
+      </div>
+      <button id="volume-toggle" class="volume-toggle" type="button" aria-label="静音" aria-pressed="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 5.5 9H3v6h2.5L11 19Z" /><path class="volume-waves" d="M15 8a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14" /><path class="volume-cross" d="m16 9 5 6m0-6-5 6" /></svg>
+      </button>
+      <div class="music-track" aria-hidden="true"><span id="music-progress"></span></div>
+      <audio id="background-music" autoplay loop preload="auto"></audio>
+    </section>
+
+    <dialog class="photo-dialog" id="photo-dialog" aria-label="查看照片">
+      <div class="photo-dialog-toolbar">
+        <span id="photo-dialog-count"></span>
+        <button type="button" id="close-photo" aria-label="关闭照片"><span aria-hidden="true">×</span><span class="close-label">关闭</span></button>
+      </div>
+      <img id="expanded-photo" alt="" />
+      <div class="photo-dialog-navigation">
+        <button type="button" id="previous-photo" aria-label="上一张照片">← <span>上一张</span></button>
+        <span class="keyboard-hint">← → 切换 · Esc 关闭</span>
+        <button type="button" id="next-photo" aria-label="下一张照片"><span>下一张</span> →</button>
+      </div>
+    </dialog>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
